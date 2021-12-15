@@ -1,0 +1,15 @@
+<div *ngFor="let image of images.slice(0, 4)" class="col">
+  <div class="card">
+    <div class="img-container">
+      <img src="{{ image.url }}" class="card-img-top" />
+    </div>
+    <div class="card-body">
+      <h5 class="card-title text-center">{{ image.name }}</h5>
+      <div class="d-grid gap-2">
+        <a href="{{ image.url }}" class="btn btn-outline-dark center"
+          >Open Image</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

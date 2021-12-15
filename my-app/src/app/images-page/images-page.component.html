@@ -1,0 +1,27 @@
+<div class="container">
+  <h3 class="text-center mt-5 display-4">All Images</h3>
+  <div
+    class="
+      image-gallery
+      mt-5
+      row row-cols-1 row-cols-lg-4 row-cols-md-2
+      g-1 g-lg-3 g-md-2 g-sm-1
+    "
+  >
+    <div *ngFor="let image of images" class="col">
+      <div class="card">
+        <div class="img-container">
+          <img src="{{ image.url }}" class="card-img-top" />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">{{ image.name }}</h5>
+          <div class="d-grid gap-2">
+            <a href="{{ image.url }}" class="btn btn-outline-dark center"
+              >Open Image</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

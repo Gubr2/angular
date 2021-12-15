@@ -1,0 +1,20 @@
+<div class="row justify-content-md-center">
+  <div class="col-6 col-lg-4">
+    <h5 class="text-center">Nickname</h5>
+    <li
+      *ngFor="let uploader of uploaders.slice(0, 3)"
+      class="list-group-item text-center"
+    >
+      {{ uploader.name }}
+    </li>
+  </div>
+  <div class="col-6 col-lg-4">
+    <h5 class="text-center">Uploaded Images</h5>
+    <li
+      *ngFor="let uploader of uploaders.slice(0, 3)"
+      class="list-group-item text-center"
+    >
+      {{ uploader.imagesCount }}
+    </li>
+  </div>
+</div>

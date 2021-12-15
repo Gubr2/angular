@@ -1,0 +1,41 @@
+<!-- Body -->
+
+<div class="container">
+  <h1 class="text-center display-4 mt-5">
+    Welcome to <strong>Adrián's Image Gallery®</strong>.
+  </h1>
+
+  <!-- Latest Images -->
+
+  <h3 class="text-center mt-5">Latest Images</h3>
+  <app-images
+    class="
+      image-gallery
+      mt-5
+      row row-cols-1 row-cols-lg-4 row-cols-md-2
+      g-1 g-lg-3 g-md-2 g-sm-1
+    "
+  >
+  </app-images>
+  <div class="d-grid col-12 col-md-6 col-lg-4 mx-auto mt-4">
+    <a class="btn btn-dark btn-lg" routerLink="/images" role="button"
+      >All Images</a
+    >
+  </div>
+</div>
+
+<!-- Top Uploaders -->
+
+<div class="container-fluid bg-light py-2 mt-5">
+  <div class="container">
+    <h3 class="text-center mt-5">Top Uploaders</h3>
+    <ul class="list-group mt-5">
+      <app-uploaders></app-uploaders>
+    </ul>
+    <div class="d-grid col-12 col-md-6 col-lg-4 mx-auto mt-4">
+      <a class="btn btn-dark btn-lg" routerLink="/uploaders" role="button"
+        >All Uploaders</a
+      >
+    </div>
+  </div>
+</div>
