@@ -1,5 +1,6 @@
-1. Importujte si databázy db-export/angular_images.sql a db-export/angular_uploaders.sql
-2. Databáza musí bežať na porte 3306, prípadne si port môžete zmeniť v súbore my-app/db.js v 9 riadku
+1. Importujte si databázy db-export/angular_images.sql a db-export/angular_uploaders.sql do MySQL Workbench
+2. Server MySQL Workbench musí bežať na porte 3306, prípadne si port môžete zmeniť v súbore my-app/db.js v 9 riadku
 3. Spustite príkaz: cd my-app
-4. Spustite príkaz: npm run startforkrutil
-5. Snáď sa to spustí! 
+4. Spustite príkaz: npm i
+5. Spustite príkaz: npm run startforkrutil
+6. Snáď sa to spustí! 
